@@ -18,6 +18,17 @@ namespace FizzBuzzKata.Tests
             Assert.Equal("1", result);
         }
 
+        [Fact]
+        public void ReturnTwoAsString()
+        {
+            FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
+            int number = 2;
+
+            string result = fizzBuzzKata.ReturnNumberAsString(number);
+
+            Assert.Equal("2", result);
+        }
+
     }
 
 }
