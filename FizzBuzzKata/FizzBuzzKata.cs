@@ -8,11 +8,6 @@ namespace FizzBuzzKata
 {
    public class FizzBuzzKata
     {
-        public int CalculateMultipleOfNumber(int number)
-        {
-            return 0;
-        }
-
         public string ReturnNumberAsString(int number)
         {
             return "1";
