@@ -10,7 +10,7 @@ namespace FizzBuzzKata
     {
         public int CalculateMultipleOfNumber(int number)
         {
-            throw new NotImplementedException();
+            return 0;
         }
     }
 }
