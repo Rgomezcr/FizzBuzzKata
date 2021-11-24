@@ -10,21 +10,12 @@ namespace FizzBuzzKata
     {
         public string ReturnNumberAsString(int number)
         {
-            if (number == 3)
-                return "Fizz";
-            if (number == 5)
-                return "Buzz";
-            if (number == 6)
-                return "Fizz";
-            if (number == 9)
-                return "Fizz";
-            if (number == 10)
-                return "Buzz";
-            if (number == 12)
-                return "Fizz";
-            if (number == 15)
+            if (number % 3 == 0 && number % 5 == 0)
                 return "FizzBuzz";
-
+            if (number % 5 == 0)
+                return "Buzz";
+            if (number % 3 == 0)
+                return "Fizz";
             return Convert.ToString(number);
         }
     }
