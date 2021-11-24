@@ -51,6 +51,17 @@ namespace FizzBuzzKata.Tests
             Assert.Equal("Fizz", result);
         }
 
+        [Fact]
+        public void ReturnFiveAsStringBuzz()
+        {
+            FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
+            int number = 5;
+
+            string result = fizzBuzzKata.ReturnNumberAsString(number);
+
+            Assert.Equal("Buzz", result);
+        }
+
     }
 
 }
