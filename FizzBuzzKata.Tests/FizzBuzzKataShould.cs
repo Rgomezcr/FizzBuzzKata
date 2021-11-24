@@ -17,6 +17,7 @@ namespace FizzBuzzKata.Tests
            
             Assert.Equal("1", result);
         }
+
     }
 
 }
