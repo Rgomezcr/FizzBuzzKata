@@ -117,11 +117,13 @@ namespace FizzBuzzKata.Tests
             Assert.Equal("Fizz", result);
         }
 
-        [Fact]
-        public void ReturnFifteenAsStringFizzBuzz()
+        [Theory]
+        [InlineData(15)]
+        [InlineData(30)]
+        [InlineData(45)]
+        public void ReturnMultipleOfThreeAndFiveAsStringFizzBuzz(int number)
         {
             FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
-            int number = 15;
 
             string result = fizzBuzzKata.ReturnNumberAsString(number);
 
