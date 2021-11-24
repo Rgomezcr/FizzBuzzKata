@@ -18,6 +18,9 @@ namespace FizzBuzzKata
                 return "Fizz";
             if (number == 9)
                 return "Fizz";
+            if (number == 10)
+                return "Buzz";
+
 
             return Convert.ToString(number);
         }
