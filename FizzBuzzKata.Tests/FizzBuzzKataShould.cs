@@ -7,48 +7,19 @@ namespace FizzBuzzKata.Tests
     public class FizzBuzzKataShould
     {
 
-        [Fact]
-        public void ReturnOneAsString()
+        [Theory]
+        [InlineData("1",1)]
+        [InlineData("2",2)]
+        [InlineData("4",4)]
+        [InlineData("7",7)]
+        [InlineData("8", 8)]
+        public void ReturnNumberAsString(string expected, int number)
         {
             FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
-            int number = 1;
-
-            string result = fizzBuzzKata.ReturnNumberAsString(number);
-           
-            Assert.Equal("1", result);
-        }
-
-        [Fact]
-        public void ReturnTwoAsString()
-        {
-            FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
-            int number = 2;
 
             string result = fizzBuzzKata.ReturnNumberAsString(number);
 
-            Assert.Equal("2", result);
-        }
-
-        [Fact]
-        public void ReturnFourAsString()
-        {
-            FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
-            int number = 4;
-
-            string result = fizzBuzzKata.ReturnNumberAsString(number);
-
-            Assert.Equal("4", result);
-        }
-
-        [Fact]
-        public void ReturnSevenAsString()
-        {
-            FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
-            int number = 7;
-
-            string result = fizzBuzzKata.ReturnNumberAsString(number);
-
-            Assert.Equal("7", result);
+            Assert.Equal(expected, result);
         }
 
         [Theory]
