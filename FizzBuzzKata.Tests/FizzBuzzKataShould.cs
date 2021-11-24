@@ -41,7 +41,7 @@ namespace FizzBuzzKata.Tests
         }
 
         [Fact]
-        public void ReturnThreeAsString()
+        public void ReturnThreeAsStringFizz()
         {
             FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
             int number = 3;
