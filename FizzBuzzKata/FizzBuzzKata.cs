@@ -10,7 +10,7 @@ namespace FizzBuzzKata
     {
         public string ReturnNumberAsString(int number)
         {
-            return "1";
+            return number.ToString();
         }
     }
 }
