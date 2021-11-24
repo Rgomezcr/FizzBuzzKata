@@ -40,6 +40,17 @@ namespace FizzBuzzKata.Tests
             Assert.Equal("4", result);
         }
 
+        [Fact]
+        public void ReturnThreeAsString()
+        {
+            FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
+            int number = 3;
+
+            string result = fizzBuzzKata.ReturnNumberAsString(number);
+
+            Assert.Equal("Fizz", result);
+        }
+
     }
 
 }
