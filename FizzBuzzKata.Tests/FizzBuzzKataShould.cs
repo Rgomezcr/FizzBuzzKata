@@ -41,17 +41,6 @@ namespace FizzBuzzKata.Tests
         }
 
         [Fact]
-        public void ReturnFiveAsStringBuzz()
-        {
-            FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
-            int number = 5;
-
-            string result = fizzBuzzKata.ReturnNumberAsString(number);
-
-            Assert.Equal("Buzz", result);
-        }
-
-        [Fact]
         public void ReturnSevenAsString()
         {
             FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
@@ -62,11 +51,14 @@ namespace FizzBuzzKata.Tests
             Assert.Equal("7", result);
         }
 
-        [Fact]
-        public void ReturnTenAsStringBuzz()
+        [Theory]
+        [InlineData(5)]
+        [InlineData(10)]
+        [InlineData(20)]
+        [InlineData(25)]
+        public void ReturnMultipleOfFiveAsStringBuzz(int number)
         {
             FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
-            int number = 10;
 
             string result = fizzBuzzKata.ReturnNumberAsString(number);
 
