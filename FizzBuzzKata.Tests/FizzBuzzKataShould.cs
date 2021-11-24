@@ -6,12 +6,14 @@ namespace FizzBuzzKata.Tests
     public class FizzBuzzKataShould
     {
         [Fact]
-        public void CheckIfNumberIsMultipleOfThree()
+        public void CheckIfNumberThreeIsMultipleOfThree()
         {
             FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
             int number = 3;
+
             int result = fizzBuzzKata.CalculateMultipleOfNumber(number);
-            Assert.Equal(3, result);
+            
+            Assert.Equal(0, result);
         }
     }
 
