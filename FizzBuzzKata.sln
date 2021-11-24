@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzKata", "FizzBuzzKata\FizzBuzzKata.csproj", "{BBC55997-D7D8-438E-A0AB-413461BD1615}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzKata.Tests", "FizzBuzzKata.Tests\FizzBuzzKata.Tests.csproj", "{AA6CC4B6-7BD7-4A99-BFEB-B7A6BD2369B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BBC55997-D7D8-438E-A0AB-413461BD1615} = {BBC55997-D7D8-438E-A0AB-413461BD1615}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
