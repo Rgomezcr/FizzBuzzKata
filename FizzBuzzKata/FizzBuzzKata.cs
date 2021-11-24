@@ -12,5 +12,10 @@ namespace FizzBuzzKata
         {
             return 0;
         }
+
+        public string ReturnNumberAsString(int number)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
