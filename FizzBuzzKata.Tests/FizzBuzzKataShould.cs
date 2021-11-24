@@ -106,6 +106,17 @@ namespace FizzBuzzKata.Tests
             Assert.Equal("Buzz", result);
         }
 
+        [Fact]
+        public void ReturnFifteenAsStringFizzBuzz()
+        {
+            FizzBuzzKata fizzBuzzKata = new FizzBuzzKata();
+            int number = 15;
+
+            string result = fizzBuzzKata.ReturnNumberAsString(number);
+
+            Assert.Equal("FizzBuzz", result);
+        }
+
     }
 
 }
